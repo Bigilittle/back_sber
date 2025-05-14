@@ -1,0 +1,60 @@
+{
+  "project" : {
+    "id" : "moj_code_dlya_dice_r-7104923-OyX",
+    "name" : "moj_code_dlya_dice_r-7104923-OyX",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "default"
+    },
+    "shared" : false,
+    "businessShared" : false,
+    "business" : false
+  },
+  "intents" : [ {
+    "id" : 903677,
+    "path" : "/пока",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ]
+  }, {
+    "id" : 903678,
+    "path" : "/привет",
+    "enabled" : true,
+    "businessShared" : false,
+    "business" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ]
+  } ],
+  "entities" : [ {
+    "entity" : {
+      "id" : 717017,
+      "name" : "Характеристика",
+      "enabled" : true,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : false,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "subject" : "Характеристики такие как: Сила, Ловкость, Телосложение, Мудрость, Интеллект, Мудрость, Харизма "
+    },
+    "records" : [ {
+      "id" : 26337454,
+      "type" : "pattern",
+      "rule" : [ "Ловкость" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ]
+}
