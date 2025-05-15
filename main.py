@@ -32,7 +32,11 @@ async def calculate_dumb(request: Request):
     data = await request.json()
     result = process_attack_dumb_data(data)
     return result
-
+    
+@app.get("/")
+def read_root():
+    return {"message": "Backend is running"}
+    
 @app.post("/calculation_advanced")
 async def calculate_dumb(request: Request):
     data = await request.json()
